@@ -3,77 +3,26 @@ package codex;
 public class q3 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		long n=600851475143L;
-		long max=0;
-		while(n%2==0)
+	// TODO Auto-generated method stub
+	long number=600851475143L;
+		int max=0;
+		for(int i=2;i<number;i++)
 		{
-			max=2;
-			n=n/2;
-		}
-			for(long i=3;i<Math.sqrt(n);i=i+2)
+			while(number%i==0)
 			{
-				if(n%i==0)
-				{
-					n=n/i;
-					max=n;
-				}
+				System.out.println(i+" ");
+				number=number/i;
+				
 			}
-			if(n>2)
-			System.out.println("The largest prime factor of the number is: "+max );
+		}
+		if(number>2)
+		{
+			max=(int) number;
+			System.out.println(number);
 			
+		}
+		System.out.println("The largest prime factor is :"+number);
 			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
+		
 	}
-
-}
+}	
