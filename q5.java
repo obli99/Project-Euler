@@ -1,27 +1,24 @@
 package codex;
-import java.util.*;
+stsic long gcd(long a,long b)
+{
+if(a%b!=0)
+	return gcd(a,a%b);
+else
+	return 0;
+}	
+static long lcm(long n)
+{
+long c=1;	
+for(long i=1;i<=n;i++)
+	c=(c*i)/(gcd(c,i));
+	return c;	
+}	
 public class q5 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner sc=new Scanner (System.in);
-for(int i=20;;i=i+20)
-{
-	int c=0;
-	for(int j=1;j<=20;j++)
-	{
-		if(i%j!=0)
-		{
-			c=1;
-			break;
-		}
-	}
-	if(c==0)
-	{
-		System.out.println("The smallest positive number that is evenly divisible by all of the number from 1 to 20 ="+i);
-		break;
-	}
-}
+	long n=20;
+		System.out.println(lcm(n));
 	}
 
 }
