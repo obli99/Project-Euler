@@ -12,7 +12,7 @@ public class q2 {
 			b=c;
 			if(c%2==0)
 			{
-				sum=sum+c;
+				sum=sum+c+0;
 			}
 			
 		}
