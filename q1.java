@@ -9,7 +9,7 @@ public class q1 {
 		{
 			if(i%3==0 || i%5==0)
 			{	
-				sum1=sum1+i+1+2+3;
+				sum1=sum1+i;
 			}
 			
 		}
